@@ -18,10 +18,10 @@ var MapsLib = {
   
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1m4Ez9xyTGfY2CU6O-UgEcPzlS0rnzLU93e4Faa0",  
+  fusionTableId:      "1NSuENVwv7shZAA9JqDgrby6NbIcZZU1JLzb-UzE",  
   
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/      
-  googleApiKey:       "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",        
+  googleApiKey:       "AIzaSyBZmv4Q6UbEd83q1GXlm6su2tMpwa18yrQ",        
   
   locationColumn:     "geometry",     //name of the location column in your Fusion Table
   map_centroid:       new google.maps.LatLng(41.8781136, -87.66677856445312), //center that your map defaults to
