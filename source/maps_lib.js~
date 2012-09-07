@@ -45,17 +45,7 @@ var MapsLib = {
     };
 
     map = new google.maps.Map($("#mapCanvas")[0],myOptions);
-   // map.setOptions({styles; styles});
-    var styles = [
-        {
-          featureType: 'all',
-          elementType: 'all',
-          stylers: [
-            { saturation: -44 }
-          ]
-        }
-      ];
-    map.setOptions({styles: styles});
+
     MapsLib.searchrecords = null;
     
     //reset filters
