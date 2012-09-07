@@ -76,6 +76,7 @@ var MapsLib = {
     if ( $("#cbType2").is(':checked')) searchType += "2,";
     if ( $("#cbType3").is(':checked')) searchType += "3,";
     if ( $("#cbType4").is(':checked')) searchType += "4,";
+    if ( $("#cbType5").is(':checked')) searchType += "5,";
     whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
     
     //-------end of filter by type code--------
