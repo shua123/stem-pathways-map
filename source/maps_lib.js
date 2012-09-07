@@ -29,7 +29,7 @@ var MapsLib = {
   recordName:         "result",       //for showing number of results
   recordNamePlural:   "results", 
   
-  searchRadius:       805,            //in meters ~ 1/2 mile
+  searchRadius:       1610,            //in meters ~ 1 mile
   defaultZoom:        11,             //zoom level when map is loaded (bigger is more zoomed in)
   addrMarkerImage: 'http://derekeder.com/images/icons/blue-pushpin.png',
   currentPinpoint: null,
@@ -43,8 +43,9 @@ var MapsLib = {
       center: MapsLib.map_centroid,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
+
     map = new google.maps.Map($("#mapCanvas")[0],myOptions);
-    
+
     MapsLib.searchrecords = null;
     
     //reset filters
