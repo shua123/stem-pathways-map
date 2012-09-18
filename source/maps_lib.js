@@ -18,7 +18,7 @@ var MapsLib = {
   
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1NSuENVwv7shZAA9JqDgrby6NbIcZZU1JLzb-UzE",  
+  fusionTableId:      "1mFnnUz8En97pMlJ37XX4R4SM-bSzOccR3xv44FA",  
   
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/      
   googleApiKey:       "AIzaSyBZmv4Q6UbEd83q1GXlm6su2tMpwa18yrQ",        
@@ -53,7 +53,7 @@ var MapsLib = {
     var loadRadius = MapsLib.convertToPlainString($.address.parameter('radius'));
     if (loadRadius != "") $("#ddlRadius").val(loadRadius);
     else $("#ddlRadius").val(MapsLib.searchRadius);
-    $(":checkbox").attr("checked", "checked");
+    $(":checkbox").attr("unchecked", "unchecked");
     $("#resultCount").hide();
      
     //run the default search
@@ -71,13 +71,17 @@ var MapsLib = {
     //remove MapsLib if you don't have any types to filter
     
     //best way to filter results by a type is to create a 'type' column and assign each row a number (strings work as well, but numbers are faster). then we can use the 'IN' operator and return all that are selected
-    var searchType = "type IN (-1,";
-    if ( $("#cbType1").is(':checked')) searchType += "1,";
-    if ( $("#cbType2").is(':checked')) searchType += "2,";
-    if ( $("#cbType3").is(':checked')) searchType += "3,";
-    if ( $("#cbType4").is(':checked')) searchType += "4,";
-    if ( $("#cbType5").is(':checked')) searchType += "5,";
-    whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
+    var searchType = "schoolyear IN (-1,";
+    var summerType = "summer IN (-1,";
+    if ( $("#cbType1").is(':checked')) whereClause += " AND 'schoolyear' = 1";
+    if ( $("#cbType2").is(':checked')) whereClause += " AND 'summer' = 1";
+    if ( $("#cbType3").is(':checked')) whereClause += " AND 'elementary' = 1";
+    if ( $("#cbType4").is(':checked')) whereClause += " AND 'middleschool' = 1";
+    if ( $("#cbType5").is(':checked')) whereClause += " AND 'highschool' = 1";
+
+
+    //whereClause += " AND " + searchType.slice(0, searchType.length - 1) +  ")";
+    //whereClause += " AND " + summerType.slice(0, summerType.length - 1) + ")";
     
     //-------end of filter by type code--------
     
