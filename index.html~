@@ -47,16 +47,16 @@
               Time of Year:
             </h4>
             <ul class='inputs-list unstyled'>
-	<li>
+              <li>
                 <label class='checkbox inline'>
-                  <input type='checkbox'  id='cbType1' />
+                  <input type='checkbox' id='cbType1' />
                   <span class='filter-box filter-blue'></span>
                   School Year Program
                 </label>
               </li>
               <li>
                 <label class='checkbox inline'>
-                  <input type='checkbox'  id='cbType2' />
+                  <input type='checkbox' id='cbType2' />
                   <span class='filter-box filter-yellow'></span>
                   Summer Program
                 </label>
@@ -66,21 +66,21 @@
               </h4>
               <li>
                 <label class='checkbox inline'>
-                  <input type='checkbox'  id='cbType3' />
+                  <input type='checkbox' id='cbType3' />
                   <span class='filter-box filter-red'></span>
                   Elementary School
                 </label>
 	      </li>
               <li>
 		<label class='checkbox inline'>
-                  <input type='checkbox'  id='cbType4' />
+                  <input type='checkbox' id='cbType5' />
                   <span class='filter-box filter-green'></span>
                   Middle School
                 </label>
               </li>
               <li>
 		<label class='checkbox inline'>
-                  <input type='checkbox'  id='cbType5' />
+                  <input type='checkbox' id='cbType4' />
                   <span class='filter-box filter-purple'></span>
                   High School
                 </label>
@@ -101,7 +101,8 @@ function googleTranslateElementInit() {
         <div class='span9'>
           <div id='mapCanvas'></div>
           <p class='pull-right'>
-            Data table available <a href='https://www.google.com/fusiontables/DataSource?docid=1NSuENVwv7shZAA9JqDgrby6NbIcZZU1JLzb-UzE'>here</a>. Map by <a href='http://kalov.net/'>Josh Kalov</a> and <a href='http://derekeder.com/searchable_map_template/'>Search template</a> by <a href='http://derekeder.com'>Derek Eder</a>.
+            Data table available <a href='https://www.google.com/fusiontables/DataSource?docid=1mFnnUz8En97pMlJ37XX4R4SM-bSzOccR3xv44FA
+'>here</a>. Map by <a href='http://kalov.net/'>Josh Kalov</a> and <a href='http://derekeder.com/searchable_map_template/'>Search template</a> by <a href='http://derekeder.com'>Derek Eder</a>.
 	  </p>
         </div>
       </div>
