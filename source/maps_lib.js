@@ -80,6 +80,11 @@ var MapsLib = {
     if ( $("#cbType4").is(':checked')) whereClause += " AND 'middleschool' = 1";
     if ( $("#cbType5").is(':checked')) whereClause += " AND 'highschool' = 1";
 
+    if ( $("#cbType6").is(':checked')) whereClause += " AND 'science' = 1";
+    if ( $("#cbType7").is(':checked')) whereClause += " AND 'technology' = 1";
+    if ( $("#cbType8").is(':checked')) whereClause += " AND 'engineering' = 1";
+    if ( $("#cbType9").is(':checked')) whereClause += " AND 'math' = 1";
+
 
     //whereClause += " AND " + searchType.slice(0, searchType.length - 1) +  ")";
     //whereClause += " AND " + summerType.slice(0, summerType.length - 1) + ")";

@@ -67,29 +67,60 @@
               <li>
                 <label class='checkbox inline'>
                   <input type='checkbox' id='cbType3' />
-                  <span class='filter-box filter-red'></span>
+                <!--  <span class='filter-box filter-red'></span> -->
                   Elementary School
                 </label>
 	      </li>
               <li>
 		<label class='checkbox inline'>
-                  <input type='checkbox' id='cbType5' />
+                  <input type='checkbox' id='cbType4' />
                   <span class='filter-box filter-green'></span>
                   Middle School
                 </label>
               </li>
               <li>
 		<label class='checkbox inline'>
-                  <input type='checkbox' id='cbType4' />
+                  <input type='checkbox' id='cbType5' />
                   <span class='filter-box filter-purple'></span>
                   High School
+                </label>
+              </li>
+              <h4>
+                Category:
+              </h4>
+              <li>
+                <label class='checkbox inline'>
+                  <input type='checkbox' id='cbType6' />
+                  <span class='filter-box filter-red'></span>
+                  Science
+                </label>
+	      </li>
+              <li>
+		<label class='checkbox inline'>
+                  <input type='checkbox' id='cbType7' />
+                  <span class='filter-box filter-green'></span>
+                  Technology
+                </label>
+              </li>
+              <li>
+		<label class='checkbox inline'>
+                  <input type='checkbox' id='cbType8' />
+                  <span class='filter-box filter-purple'></span>
+                  Engineering
+                </label>
+              </li>
+              <li>
+		<label class='checkbox inline'>
+                  <input type='checkbox' id='cbType9' />
+                  <span class='filter-box filter-purple'></span>
+                  Math
                 </label>
               </li>
             </ul>
             <hr />
             <input class='btn btn-primary btn-large' id='btnSearch' type='button' value='Search' />
             <button class='btn' id='reset'>Reset</button>
-            <br />Check with the provider directly for the latest information. If you find any inaccuracies or know of additional programs please <a href="mailto:jkalov+strikeoptions@gmail.com">email me</a>.
+          <!--  <br />Check with the provider directly for the latest information. If you find any inaccuracies or know of additional programs please <a href="mailto:jkalov+strikeoptions@gmail.com">email me</a>. -->
           </div>
           <p class='alert alert-info lead' id='resultCount'></p>
 <div id="google_translate_element"></div><script type="text/javascript">
