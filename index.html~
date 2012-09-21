@@ -23,6 +23,7 @@
         <h1>
           <a href='#'>STEM Pathways Programs</a> 
           <small>Programs & Activities in Chicago</small>
+
         </h1>
 
       </div>
@@ -117,18 +118,13 @@
                 </label>
               </li>
             </ul>
-            <hr />
+           <!-- <hr /> -->
             <input class='btn btn-primary btn-large' id='btnSearch' type='button' value='Search' />
             <button class='btn' id='reset'>Reset</button>
           <!--  <br />Check with the provider directly for the latest information. If you find any inaccuracies or know of additional programs please <a href="mailto:jkalov+strikeoptions@gmail.com">email me</a>. -->
           </div>
           <p class='alert alert-info lead' id='resultCount'></p>
-<div id="google_translate_element"></div><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false, gaTrack: true, gaId: 'UA-18294146-1'}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        </div>
+
         <div class='span9'>
           <div id='mapCanvas'></div>
           <p class='pull-right'>

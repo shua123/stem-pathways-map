@@ -45,6 +45,23 @@ var MapsLib = {
     };
 
     map = new google.maps.Map($("#mapCanvas")[0],myOptions);
+var styles = [
+  {
+    stylers: [
+      { saturation: -70 }
+    ]
+  },{
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [
+      { lightness: 100 },
+      { visibility: "simplified" }
+    ]
+  }
+];
+
+map.setOptions({styles: styles});
+
 
     MapsLib.searchrecords = null;
     

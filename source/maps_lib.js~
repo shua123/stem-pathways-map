@@ -45,6 +45,23 @@ var MapsLib = {
     };
 
     map = new google.maps.Map($("#mapCanvas")[0],myOptions);
+var styles = [
+  {
+    stylers: [
+      { saturation: -50 }
+    ]
+  },{
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [
+      { lightness: 100 },
+      { visibility: "simplified" }
+    ]
+  }
+];
+
+map.setOptions({styles: styles});
+
 
     MapsLib.searchrecords = null;
     
@@ -79,6 +96,11 @@ var MapsLib = {
     if ( $("#cbType3").is(':checked')) whereClause += " AND 'elementary' = 1";
     if ( $("#cbType4").is(':checked')) whereClause += " AND 'middleschool' = 1";
     if ( $("#cbType5").is(':checked')) whereClause += " AND 'highschool' = 1";
+
+    if ( $("#cbType6").is(':checked')) whereClause += " AND 'science' = 1";
+    if ( $("#cbType7").is(':checked')) whereClause += " AND 'technology' = 1";
+    if ( $("#cbType8").is(':checked')) whereClause += " AND 'engineering' = 1";
+    if ( $("#cbType9").is(':checked')) whereClause += " AND 'math' = 1";
 
 
     //whereClause += " AND " + searchType.slice(0, searchType.length - 1) +  ")";
